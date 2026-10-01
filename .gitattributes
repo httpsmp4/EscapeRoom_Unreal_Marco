@@ -1,0 +1,55 @@
+# Normalizzazione dei fine riga per i file di testo
+* text=auto
+
+# Sorgenti e configurazione Unreal (testo)
+*.cs        text
+*.cpp       text
+*.h         text
+*.ini       text
+*.uproject  text
+*.uplugin   text
+
+# Script: fine riga fissi a prescindere dalla piattaforma
+*.sh        text eol=lf
+*.bat       text eol=crlf
+
+# --- Git LFS ---
+# Asset binari Unreal
+*.uasset    filter=lfs diff=lfs merge=lfs -text
+*.umap      filter=lfs diff=lfs merge=lfs -text
+*.ubulk     filter=lfs diff=lfs merge=lfs -text
+*.uexp      filter=lfs diff=lfs merge=lfs -text
+*.upk       filter=lfs diff=lfs merge=lfs -text
+*.udk       filter=lfs diff=lfs merge=lfs -text
+
+# Modelli 3D
+*.fbx       filter=lfs diff=lfs merge=lfs -text
+*.abc       filter=lfs diff=lfs merge=lfs -text
+*.blend     filter=lfs diff=lfs merge=lfs -text
+*.glb       filter=lfs diff=lfs merge=lfs -text
+*.gltf      filter=lfs diff=lfs merge=lfs -text
+
+# Texture sorgente
+*.psd       filter=lfs diff=lfs merge=lfs -text
+*.tga       filter=lfs diff=lfs merge=lfs -text
+*.tif       filter=lfs diff=lfs merge=lfs -text
+*.tiff      filter=lfs diff=lfs merge=lfs -text
+*.exr       filter=lfs diff=lfs merge=lfs -text
+*.hdr       filter=lfs diff=lfs merge=lfs -text
+
+# Audio / video
+*.wav       filter=lfs diff=lfs merge=lfs -text
+*.mp3       filter=lfs diff=lfs merge=lfs -text
+*.ogg       filter=lfs diff=lfs merge=lfs -text
+*.mp4       filter=lfs diff=lfs merge=lfs -text
+*.mov       filter=lfs diff=lfs merge=lfs -text
+
+# Archivi
+*.zip       filter=lfs diff=lfs merge=lfs -text
+*.7z        filter=lfs diff=lfs merge=lfs -text
+
+# Immagini piccole (icone, asset web di Samples/PixelStreaming): binarie ma in git normale
+*.png       binary
+*.jpg       binary
+*.jpeg      binary
+*.ico       binary
