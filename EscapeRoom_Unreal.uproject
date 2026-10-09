@@ -7,7 +7,10 @@
 		{
 			"Name": "VR_Games_Headless",
 			"Type": "Runtime",
-			"LoadingPhase": "Default"
+			"LoadingPhase": "Default",
+			"AdditionalDependencies": [
+				"UMG"
+			]
 		}
 	],
 	"Plugins": [
